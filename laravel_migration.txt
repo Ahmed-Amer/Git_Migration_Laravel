@@ -1,0 +1,13 @@
+#Clone your project from git
+
+1-composer install
+2-npm install
+copy .env.example .env
+
+3-cp .env.example .env
+4-php artisan key:generate
+5-php artisan migrate # First edit .env file
+5-composer dump-autoload
+
+# All commands in one line
+composer install && npm install && cp .env.example .env && php artisan key:generate && composer dump-autoload
